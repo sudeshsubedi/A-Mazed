@@ -10,7 +10,7 @@ pub struct Grid {
 
 impl Grid {
     pub fn new(rows: u8, cols: u8) -> Self {
-        let mut grid: Vec<Vec<Cell>> = Vec::with_capacity((rows*cols) as usize);
+        let mut grid: Vec<Vec<Cell>> = Vec::with_capacity(rows as usize *cols as usize);
         for i in 0..rows {
             let mut row: Vec<Cell> = Vec::with_capacity(cols as usize);
             for j in 0..cols {
