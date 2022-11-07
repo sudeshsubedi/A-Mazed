@@ -11,4 +11,8 @@ pub struct Cli {
     /// No of columns in grid
     #[arg(short, long, default_value_t=15)]
     pub cols: u8,
+
+    /// option to enable pretty print
+    #[arg(short, long, default_value_t=false)]
+    pub pretty: bool,
 }

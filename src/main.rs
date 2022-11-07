@@ -14,5 +14,6 @@ fn main() {
     let args = Cli::parse();
     let mut maze = Grid::new(args.rows, args.cols);
     binarysearch::generate(&mut maze);
+    maze.pretty = args.pretty;
     println!("{}", maze);
 }
