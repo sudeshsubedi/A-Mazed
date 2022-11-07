@@ -1,4 +1,4 @@
-use clap::Parser;
+use clap::{ Parser, ValueEnum };
 
 /// A simple maze generation program exploring different algorithms
 #[derive(Parser, Debug)]
@@ -15,4 +15,13 @@ pub struct Cli {
     /// option to enable pretty print
     #[arg(short, long, default_value_t=false)]
     pub pretty: bool,
+
+    #[arg(value_enum, short, long, default_value_t=AlgorithmChoice::BinaryTree)]
+    pub algorithm_choice: AlgorithmChoice,
+}
+
+#[derive(Debug, Clone, ValueEnum)]
+pub enum AlgorithmChoice {
+    BinaryTree,
+    SideWinder,
 }
