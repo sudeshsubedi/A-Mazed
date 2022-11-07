@@ -1,2 +1,2 @@
-pub mod binarysearch;
+pub mod binarytree;
 pub mod sidewinder;
