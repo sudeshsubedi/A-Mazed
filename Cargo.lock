@@ -3,6 +3,15 @@
 version = 3
 
 [[package]]
+name = "A-Mazed"
+version = "0.1.0"
+dependencies = [
+ "clap",
+ "colored",
+ "rand",
+]
+
+[[package]]
 name = "atty"
 version = "0.2.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -110,15 +119,6 @@ name = "libc"
 version = "0.2.137"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fc7fcc620a3bff7cdd7a365be3376c97191aeaccc2a603e600951e452615bf89"
-
-[[package]]
-name = "maze"
-version = "0.1.0"
-dependencies = [
- "clap",
- "colored",
- "rand",
-]
 
 [[package]]
 name = "once_cell"
